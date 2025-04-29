@@ -17,13 +17,13 @@ pip install -r requirements.txt
 Create a directory named `weights` and create a subdirectory named `detection`, then save the downloaded YOLOv8 object detection weights inside this directory.  
 The weight files can be downloaded from the table below:
 
-| Model   | size (pixels) | mAP<sup>val</sup> 50-95 | params (M) |
-|---------|---------------|-------------------------|------------|
-| YOLOv8n | 640           | 37.3                    | 3.2        |
-| YOLOv8s | 640           | 44.9                    | 11.2       |
-| YOLOv8m | 640           | 50.2                    | 25.9       |
-| YOLOv8l | 640           | 52.9                    | 43.7       |
-| YOLOv8x | 640           | 53.9                    | 68.2       |
+| Model | size (pixels) | mAP<sup>val</sup> 50-95 | Speed CPU ONNX (ms) | Speed A100 TensorRT (ms) | params (M) | FLOPs (B) |
+|-------|---------------|-------------------------|----------------------|---------------------------|------------|-----------|
+| [YOLOv8n](https://huggingface.co/ultralytics/yolov8/resolve/main/yolov8n.pt) | 640 | 37.3 | 80.4 | 0.99 | 3.2 | 8.7 |
+| [YOLOv8s](https://huggingface.co/ultralytics/yolov8/resolve/main/yolov8s.pt) | 640 | 44.9 | 128.4 | 1.20 | 11.2 | 28.6 |
+| [YOLOv8m](https://huggingface.co/ultralytics/yolov8/resolve/main/yolov8m.pt) | 640 | 50.2 | 234.7 | 1.83 | 25.9 | 78.9 |
+| [YOLOv8l](https://huggingface.co/ultralytics/yolov8/resolve/main/yolov8l.pt) | 640 | 52.9 | 375.2 | 2.39 | 43.7 | 165.2 |
+| [YOLOv8x](https://huggingface.co/ultralytics/yolov8/resolve/main/yolov8x.pt) | 640 | 53.9 | 479.1 | 3.53 | 68.2 | 257.8 |
 
 ### 3. Run the Application:
 
